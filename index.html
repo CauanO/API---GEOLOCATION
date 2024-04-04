@@ -6,21 +6,9 @@
     <title>API - Geolocation</title>
 </head>
 <body>
-<h1>Estou de observando....</h1>
-<p id="logitude"></p>
-<p id="latitude"></p>
-    <script>
-        if ('geolocation' in navigator) {
-            navigator.geolocation.getCurrentPosition(function(position){
-                var logitude = position.coords.longitude
-                var latitude = position.coords.latitude
-                document.getElementById('logitude').innerHTML = `Sua logitude é ${logitude}`
-                document.getElementById('latitude').innerHTML = `Sua latitude é ${latitude}`
-
-            }, function(error){
-                document.getElementById('latitude').innerHTML = `Parabens, passou pelo teste...`
-            })
-        }
-    </script>
+    <h1>Estou de observando....</h1>
+    <p id="logitude"></p>
+    <p id="latitude"></p>
+    <script src="js/script.js"></script>
 </body>
 </html>
